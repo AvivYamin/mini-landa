@@ -20,16 +20,6 @@ Share.init(
       allowNull: false,
       defaultValue: 1,
     },
-    owner: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        references: { model: 'user', key: 'id' },
-    },
-    asset: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        references: { model: 'asset', key: 'id' },
-    },
   },
   {
   sequelize,

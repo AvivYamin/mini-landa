@@ -114,11 +114,6 @@ module.exports = {
               type: DataTypes.INTEGER,
               allowNull: false,
         },
-        owner: {
-          type: DataTypes.INTEGER,
-          allowNull: false,
-          references: { model: 'users', key: 'id' },
-        },
         created_at: {
             type: DataTypes.DATE,
         },
@@ -143,16 +138,6 @@ module.exports = {
             allowNull: false,
             defaultValue: 1,
         },
-        owner: {
-          type: DataTypes.INTEGER,
-          allowNull: false,
-          references: { model: 'users', key: 'id' },
-        },
-        asset: {
-          type: DataTypes.INTEGER,
-          allowNull: false,
-          references: { model: 'assets', key: 'id' },
-        }
       })
     },
     down: async ({ context: queryInterface }) => {
