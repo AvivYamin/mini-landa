@@ -44,7 +44,9 @@
 
 <!-- - #### 2. DB Diagram  -->
 #### 3. Models 
+
 - [V] a. User 
+
     ```json
         "example":
             {
@@ -57,6 +59,7 @@
                 "credit": 100,
             }
     ```
+
 - [V] b. Asset 
     ```json
         "example":

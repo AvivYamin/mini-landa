@@ -39,6 +39,7 @@ Asset.init({
         type: DataTypes.INTEGER,
         allowNull: false,
         defaultValue: 10000
+
     },
     availableShares: {
         type: DataTypes.INTEGER,
