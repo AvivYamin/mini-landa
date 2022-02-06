@@ -162,23 +162,3 @@ module.exports = {
       await queryInterface.dropTable('users')
     },
 }
-
-  /*
-  shares-
-        owner: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            references: { model: 'users', key: 'id' },
-        },
-        asset: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            references: { model: 'assets', key: 'id' },
-        }
-  transactions - 
-          owner: {
-              type: DataTypes.INTEGER,
-              allowNull: false,
-              references: { model: 'users', key: 'id' },
-        },
-  */
