@@ -24,7 +24,7 @@ Share.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       references: { model: 'assets', key: 'id' },
-  },
+    },
   },
   {
   sequelize,

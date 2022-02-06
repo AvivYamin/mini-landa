@@ -42,7 +42,10 @@
     - **g. `JWT` - For basic authentication and authorization using tokens.**
     - **h. `heroku` - For basic development db cloud server.**
 
-<!-- - #### 2. DB Diagram  -->
+#### 2. DB Diagram 
+
+![Example](./Assets/Mini-Landa-1.0.0.jpg)
+
 #### 3. Models 
 
 - [V] a. User 
