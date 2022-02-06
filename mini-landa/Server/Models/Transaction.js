@@ -24,13 +24,11 @@ Transaction.init(
         type: DataTypes.INTEGER,
         allowNull: false,
     },
-    /*
     owner: {
         type: DataTypes.INTEGER,
         allowNull: false,
         references: { model: 'user', key: 'id' },
     }
-    */
   },
   {
   sequelize,

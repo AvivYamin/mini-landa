@@ -6,10 +6,12 @@ const User = require ('./User');
 const Share = require('./Share')
 const Transaction = require('./Transaction')
 
-//User.hasMany(Share);
-//Share.belongsTo(User);
-//Asset.hasMany(Share);
-//Share.belongsTo(Asset);
+User.hasMany(Share);
+Share.belongsTo(User);
+User.hasMany(Transaction);
+Transaction.belongsTo(User);
+Asset.hasMany(Share);
+Share.belongsTo(Asset);
 
 
 //User.belongsToMany(ReadingList, { through: UsersRl })
