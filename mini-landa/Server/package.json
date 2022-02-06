@@ -1,0 +1,33 @@
+{
+  "name": "mini-landa-server",
+  "version": "1.0.0",
+  "description": "This is Mini-Landa supporting server.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "migration:down": "node Utils/Config/rollback.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AvivYamin/mini-landa.git",
+    "directory": "mini-landa/Server"
+  },
+  "author": "Aviv Yamin",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.7.3",
+    "sequelize": "^6.15.0",
+    "umzug": "^3.0.0"
+  },
+  "devDependencies": {
+    "install": "^0.13.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15",
+    "npm": "^8.4.1"
+  }
+}
