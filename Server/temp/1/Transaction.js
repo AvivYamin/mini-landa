@@ -23,6 +23,17 @@ Transaction.init(
     quantity: {
         type: DataTypes.INTEGER,
         allowNull: false,
+        defaultValue: 0,
+    },
+    userId: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        references: { model: 'users', key: 'id' },
+    },
+    assetId: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        references: { model: 'assets', key: 'id' },
     },
   },
   {
