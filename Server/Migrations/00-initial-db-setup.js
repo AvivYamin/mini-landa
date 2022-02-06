@@ -110,7 +110,7 @@ module.exports = {
             type: DataTypes.INTEGER,
             allowNull: false,
         },
-        quatity: {
+        quantity: {
               type: DataTypes.INTEGER,
               allowNull: false,
         },

@@ -1,39 +1,40 @@
 const sequelize = require('../Utils/Config/DB');
 const { Model, DataTypes } = require('sequelize');
 
-class Transaction extends Model {}
+class Share extends Model {}
 
-Transaction.init(
+Share.init(
   {
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true
     },
-    //Bid = True; Ask = False;
-    type: {
+    available: {
       type: DataTypes.BOOLEAN,
+      defaultValue: false,
       allowNull: false
     },
-    //Price Per Share
-    pps: {
+    cost: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      defaultValue: 1,
     },
-    quantity: {
+    assetId: {
         type: DataTypes.INTEGER,
         allowNull: false,
+        references: { model: 'assets', key: 'id' },
     },
   },
   {
   sequelize,
   underscored: true,
-  timestamps: true,
-  modelName: 'transaction'
+  timestamps: false,
+  modelName: 'share'
   }
 );
 
 
-module.exports = Transaction;
+module.exports = Share;
 
 
