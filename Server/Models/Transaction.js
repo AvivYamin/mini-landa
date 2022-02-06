@@ -24,6 +24,16 @@ Transaction.init(
         type: DataTypes.INTEGER,
         allowNull: false,
     },
+    userId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: { model: 'users', key: 'id' },
+    },
+    assetId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: { model: 'assets', key: 'id' },
+    },
   },
   {
   sequelize,
