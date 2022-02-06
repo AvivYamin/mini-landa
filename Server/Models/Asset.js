@@ -38,16 +38,17 @@ Asset.init({
     shares: {
         type: DataTypes.INTEGER,
         allowNull: false,
-        defaultValue: 1000
+        defaultValue: 10000
+
     },
     availableShares: {
         type: DataTypes.INTEGER,
         allowNull: false,
-        defaultValue: 1000,
+        defaultValue: 10000,
         validate: {
             max: { 
-              args: [1000],
-              msg: "Shares must be less than 1,000"
+              args: [10000],
+              msg: "Shares must be less than 10,000"
             },
             min: {
               args: [0],

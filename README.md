@@ -44,12 +44,14 @@
 
 <!-- - #### 2. DB Diagram  -->
 #### 3. Models 
-- [ ] a. User 
+
+- [V] a. User 
+
     ```json
         "example":
             {
                 "id": 1,
-                "username": "example@gmail.com",
+                "username": "example@gmail.com", 
                 "name": "John Doe",
                 "admin": false,
                 "disabled": false,
@@ -57,7 +59,8 @@
                 "credit": 100,
             }
     ```
-- [ ] b. Asset 
+
+- [V] b. Asset 
     ```json
         "example":
             {
@@ -65,22 +68,22 @@
                 "address": "18 Test st, Example Province",
                 "available": true,
                 "cost": 600000,
-                "shares": 1000,
+                "shares": 10000,
                 "availableShares": 350,
             }
     ```       
-- [ ] c. Share  
+- [V] c. Share  
     ```json
         "example":
             {
                 "id": 1,
                 "available": true,
                 "cost": 5,
-                "owner": 3,
-                "asset": 5
+                "user_id": 3,
+                "asset_id": 5
             }
     ```   
-- [ ] d. Transaction 
+- [V] d. Transaction 
     ```json
         "example":
             {
@@ -88,7 +91,9 @@
                 "quantity": 70,
                 "type": true,
                 "pps": 3,
-                "owner": 3
+                "user_id": 3,
+                "created_at": "Tue Feb 01 2022 00:00:00 GMT+0000",
+                "updated_at": "Wed Feb 02 2022 00:00:00 GMT+0000",
             }
     ```     
 #### 4.0. CRUD Endpoints & Routers 

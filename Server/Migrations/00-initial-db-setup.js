@@ -49,11 +49,11 @@ module.exports = {
         available_shares: {
           type: DataTypes.INTEGER,
           allowNull: false,
-          defaultValue: 1000,
+          defaultValue: 10000,
           validate: {
               max: { 
-                args: [1000],
-                msg: "Shares must be less than 1,000"
+                args: [10000],
+                msg: "Shares must be less than 10,000"
               },
               min: {
                 args: [0],
@@ -110,7 +110,7 @@ module.exports = {
             type: DataTypes.INTEGER,
             allowNull: false,
         },
-        quatity: {
+        quantity: {
               type: DataTypes.INTEGER,
               allowNull: false,
         },
@@ -148,22 +148,3 @@ module.exports = {
     },
 }
 
-  /*
-  shares-
-          owner: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            references: { model: 'users', key: 'id' },
-        }
-        asset: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            references: { model: 'assets', key: 'id' },
-        }
-  transactions - 
-          owner: {
-              type: DataTypes.INTEGER,
-              allowNull: false,
-              references: { model: 'users', key: 'id' },
-        },
-  */
