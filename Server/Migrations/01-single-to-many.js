@@ -1,5 +1,5 @@
 const { Sequelize, DataTypes } = require('sequelize');
-const c = require('../../Utils/Helpers/coloredLogs');
+const c = require('../Utils/Helpers/coloredLogs');
 
 //Add related collums in single to many relationship.
 //According to the revised Models.
