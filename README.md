@@ -30,16 +30,26 @@
 
 #### 1. Web server application based on `NodeJS` & `Postgresql` 
 **Dependencies**
-    - **a. `Express` - For serving API & http requests and routers.**
-    - **b. `PostgreSQL` - DataBase**
-        - **b.1. `Sequelize` - For SQL ORM to minimize vulnerability to SQL injection attacks.**
-        - **b.2. `pg` - For PostgreSQL**
-        - **b.3. `Umzug` - For migrations**
-    - **c. `nodemon` - Dev dependecy for automatically restarting the node application when file changes .**
+- **a. `Express` - For serving API & http requests and routers.**
+
+- **b. `PostgreSQL` - DataBase**
+
+    - **b.1. `Sequelize` - For SQL ORM to minimize vulnerability to SQL injection attacks.**
+
+    - **b.2. `pg` - For PostgreSQL**
+
+    - **b.3. `Umzug` - For migrations**
+
+- **c. `nodemon` - Dev dependecy for automatically restarting the node application when file changes .**
+
     - **d. `morgan` - Dev dependecy for HTTP request logger middleware.**
+
     - **e. `dotenv` - To store and serve vulnerable information.**
+
     - **f. `cors` - For providing a Connect/Express middleware that can be used to enable CORS with various options.**
+
     - **g. `JWT` - For basic authentication and authorization using tokens.**
+
     - **h. `heroku` - For basic development db cloud server.**
 
 #### 2. DB Diagram 
@@ -134,12 +144,15 @@
 ### Frontend: Under `Client` directory
 
 - **2. I created a front-end web application based on `JavaScript` & `React` and also the following npm dependencies: .**
+
     - **a. `Redux` - Store for components states management.**
+
     - **b. `Axios` - For client HTTP requests.**
+
     - **c. `Bootstrap` - For simplified frontend design.**
+
     - **d. `Live-Server` - A little development server with live reload capability.**
         
-
     - **2.0. Landig-page: .**
         - [ ] a. HTTP GET - serves the webpage static files. 
         - [ ] b. Does not require any authentication to view public data, however to preform actions the user must sign-up or login.    
